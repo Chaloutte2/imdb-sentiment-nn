@@ -18,8 +18,11 @@ os.makedirs("model", exist_ok=True)
 
 #Load dataset
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-df = pd.read_csv("data/imdb_balanced_10k.csv")
+data_path = os.path.join(BASE_DIR, "data", "imdb_balanced_10k.csv")
+
+df = pd.read_csv(data_path)
 
 TEXT_COLUMN = "review"
 LABEL_COLUMN = "sentiment"
