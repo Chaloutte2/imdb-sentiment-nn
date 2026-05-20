@@ -24,8 +24,8 @@ data_path = os.path.join(BASE_DIR, "data", "imdb_balanced_10k.csv")
 
 df = pd.read_csv(data_path)
 
-TEXT_COLUMN = "review"
-LABEL_COLUMN = "sentiment"
+TEXT_COLUMN = "text"
+LABEL_COLUMN = "label"
 
 #Convert labels
 df[LABEL_COLUMN] = df[LABEL_COLUMN].map({
