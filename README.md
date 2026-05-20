@@ -1,6 +1,6 @@
 # IMDb Sentiment Neural Network
 
-Neural network sentiment classifier trained on IMDb reviews.
+Neural network sentiment classifier trained on IMDb reviews
 
 ## Features
 
