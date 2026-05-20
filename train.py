@@ -28,10 +28,7 @@ TEXT_COLUMN = "text"
 LABEL_COLUMN = "label"
 
 #Convert labels
-df[LABEL_COLUMN] = df[LABEL_COLUMN].map({
-    "positive": 1,
-    "negative": 0
-})
+df[LABEL_COLUMN] = df[LABEL_COLUMN].astype(int)
 
 #Split data
 X_train, X_test, y_train, y_test = train_test_split(
